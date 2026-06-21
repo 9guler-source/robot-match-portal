@@ -506,6 +506,7 @@ export default function MatchPage() {
   return (
     <div className="min-h-screen w-full bg-slate-950 flex flex-col">
       <div className="flex flex-col flex-1 max-w-md mx-auto w-full px-5 pt-6 pb-5">
+        <p className="text-[15px] font-semibold tracking-tight text-amber-100 mb-4">나에게 맞는 동반 로봇 찾기</p>
         {stepId !== "result" && <div className="mb-6"><PathTracker total={steps.length - 1} current={idx} /></div>}
         <div className="flex-1">{renderStep()}</div>
         {stepId !== "result" && (
